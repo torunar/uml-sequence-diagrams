@@ -1,0 +1,39 @@
+{
+    "name": "torunar/uml-sequence-diagrams",
+    "description": "Generates UML sequence diagrams via websequencediagrams.com",
+    "type": "library",
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Schekotov",
+            "email": "torunar@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Torunar\\WebSequenceDiagrams\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Torunar\\WebSequenceDiagrams\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ],
+        "tests": [
+            "./vendor/bin/phpunit"
+        ]
+    },
+    "minimum-stability": "dev"
+}
